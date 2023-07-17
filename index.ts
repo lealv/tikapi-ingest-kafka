@@ -82,7 +82,7 @@ const searchTikAPI = async (
 run();
 async function run() {
   try {
-    const data = await searchTikAPI(search, Number(limit));
+    const data = await searchTikAPI(search, limit);
     let messages: Message[] = data.map((x) => {
       return {
         value: JSON.stringify(x),
